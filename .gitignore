@@ -1,0 +1,37 @@
+### --- Xcode ---
+# User settings
+*.xcuserstate
+*.xccheckout
+*.moved-aside
+
+# User data (NO subir)
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+
+# Derived data (NO subir)
+DerivedData/
+build/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+### --- macOS ---
+.DS_Store
+
+### --- Swift Package Manager ---
+/.build/
+.swiftpm/xcode/package.xcworkspace/xcuserdata/
+
+# Optional: ignore SPM logs
+.swiftpm/configuration/registries.json
+.swiftpm/configuration/mirrors.json
+
+### --- Cocoapods (si no usas, igual puede estar por seguridad) ---
+Pods/
+Podfile.lock
+
+### --- Firebase / Google configs (NO subas secretos) ---
+GoogleService-Info.plist
+
+### --- Others ---
+*.plist~
