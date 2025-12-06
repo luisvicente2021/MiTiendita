@@ -1,0 +1,732 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1900C052EB3130400A65DEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1900BF72EB3130400A65DEE /* ContentView.swift */; };
+		B1900C072EB3130400A65DEE /* MiTienditaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1900BFC2EB3130400A65DEE /* MiTienditaApp.swift */; };
+		B1900C092EB3130400A65DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1900BF62EB3130400A65DEE /* Assets.xcassets */; };
+		B1900C0A2EB3130400A65DEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1900BFE2EB3130400A65DEE /* Preview Assets.xcassets */; };
+		B19159922EDFB408008037A0 /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19159912EDFB401008037A0 /* RegisterCoordinator.swift */; };
+		B1A731B22EDB73C800E51E6B /* OnboardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A731B12EDB73C800E51E6B /* OnboardingPage.swift */; };
+		B1A731F02EDBDA9800E51E6B /* UserMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A731EF2EDBDA9500E51E6B /* UserMetadata.swift */; };
+		B1A731F22EDBDC7400E51E6B /* StoreConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A731F12EDBDC7300E51E6B /* StoreConfiguration.swift */; };
+		B1AA08D92ED7D1D600B0A644 /* Persona.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AA08D82ED7D1D600B0A644 /* Persona.swift */; };
+		B1AA090E2ED7F90600B0A644 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AA090D2ED7F90200B0A644 /* Coordinator.swift */; };
+		B1B011F62EE1039900D7BC50 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B011F02EE1039900D7BC50 /* OnboardingCoordinator.swift */; };
+		B1B012172EE12EE300D7BC50 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B012162EE12EE300D7BC50 /* AppFlow.swift */; };
+		B1B012192EE12F6C00D7BC50 /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B012182EE12F6C00D7BC50 /* OnboardingScreen.swift */; };
+		B1B0121B2EE12F8700D7BC50 /* OnboardingCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B0121A2EE12F8700D7BC50 /* OnboardingCoordinatorView.swift */; };
+		B1D0D6442EB190FA002A16C4 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = B1D0D6432EB190FA002A16C4 /* Auth */; };
+		B1D0D6462EB190FA002A16C4 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = B1D0D6452EB190FA002A16C4 /* Realtime */; };
+		B1D0D6482EB190FA002A16C4 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = B1D0D6472EB190FA002A16C4 /* Supabase */; };
+		B1D0D64A2EB19145002A16C4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D0D6492EB19145002A16C4 /* AuthService.swift */; };
+		B1D0D64D2EB19175002A16C4 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = B1D0D64C2EB19175002A16C4 /* KeychainAccess */; };
+		B1D1A4042EE4AEA700347100 /* DashboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D1A4032EE4AE9A00347100 /* DashboardCoordinator.swift */; };
+		B1DB2C7E2EDE553E005738D9 /* ClienteEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DB2C7D2EDE553E005738D9 /* ClienteEntity.swift */; };
+		B1DB2C812EDE5633005738D9 /* ClienteModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1DB2C7F2EDE5633005738D9 /* ClienteModel.xcdatamodeld */; };
+		B1DD44532EE29604004A6082 /* DashboardCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DD44522EE29604004A6082 /* DashboardCoordinatorView.swift */; };
+		B1DD44552EE297A0004A6082 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DD44542EE297A0004A6082 /* DashboardViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B1900BF62EB3130400A65DEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1900BF72EB3130400A65DEE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B1900BFC2EB3130400A65DEE /* MiTienditaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiTienditaApp.swift; sourceTree = "<group>"; };
+		B1900BFE2EB3130400A65DEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B19159912EDFB401008037A0 /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
+		B1A731B12EDB73C800E51E6B /* OnboardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPage.swift; sourceTree = "<group>"; };
+		B1A731EF2EDBDA9500E51E6B /* UserMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMetadata.swift; sourceTree = "<group>"; };
+		B1A731F12EDBDC7300E51E6B /* StoreConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreConfiguration.swift; sourceTree = "<group>"; };
+		B1A963E32E4C1EE800741ABD /* MiTiendita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiTiendita.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1AA08D82ED7D1D600B0A644 /* Persona.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persona.swift; sourceTree = "<group>"; };
+		B1AA090D2ED7F90200B0A644 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B1B011F02EE1039900D7BC50 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		B1B012162EE12EE300D7BC50 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
+		B1B012182EE12F6C00D7BC50 /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
+		B1B0121A2EE12F8700D7BC50 /* OnboardingCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinatorView.swift; sourceTree = "<group>"; };
+		B1D0D6492EB19145002A16C4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		B1D1A4032EE4AE9A00347100 /* DashboardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCoordinator.swift; sourceTree = "<group>"; };
+		B1DB2C7D2EDE553E005738D9 /* ClienteEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClienteEntity.swift; sourceTree = "<group>"; };
+		B1DB2C802EDE5633005738D9 /* ClienteModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClienteModel.xcdatamodel; sourceTree = "<group>"; };
+		B1DD44522EE29604004A6082 /* DashboardCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCoordinatorView.swift; sourceTree = "<group>"; };
+		B1DD44542EE297A0004A6082 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B1A731E22EDBD08F00E51E6B /* Exceptions for "Network" folder in "MiTiendita" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SupabaseManager.swift,
+			);
+			target = B1A963E22E4C1EE800741ABD /* MiTiendita */;
+		};
+		B1DB2C982EDE60BC005738D9 /* Exceptions for "Persistence" folder in "MiTiendita" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				PersistenceController.swift,
+			);
+			target = B1A963E22E4C1EE800741ABD /* MiTiendita */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B19C35DA2ED6B4090046D48C /* Components */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B19C35F02ED6B6F50046D48C /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B19C35F12ED6B70E0046D48C /* ViewModels */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B1A731E32EDBD11800E51E6B /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B1A731E42EDBD12700E51E6B /* ViewModel */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B1A731E62EDBD15200E51E6B /* View */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = View;
+			sourceTree = "<group>";
+		};
+		B1A731EC2EDBD48300E51E6B /* Repositories */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		B1A7C7F72ECE8F780063FA35 /* RegisterViewModel */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = RegisterViewModel;
+			sourceTree = "<group>";
+		};
+		B1A7C7F82ECE8F850063FA35 /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B1A7C7F92ECE8FE20063FA35 /* Helpers */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B1AA08F32ED7D41C00B0A644 /* Repositories */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		B1AA08F72ED7D46900B0A644 /* UseCase */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		B1D642382ECD5DD1006A6283 /* Network */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B1A731E22EDBD08F00E51E6B /* Exceptions for "Network" folder in "MiTiendita" target */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B1DB2C822EDE580F005738D9 /* Mappers */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		B1DB2C8A2EDE5A52005738D9 /* DataSource */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		B1DB2C952EDE6012005738D9 /* Persistence */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B1DB2C982EDE60BC005738D9 /* Exceptions for "Persistence" folder in "MiTiendita" target */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		B1E457052EB46864003731E9 /* DetailsView */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DetailsView;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1A963E02E4C1EE800741ABD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1D0D64D2EB19175002A16C4 /* KeychainAccess in Frameworks */,
+				B1D0D6442EB190FA002A16C4 /* Auth in Frameworks */,
+				B1D0D6462EB190FA002A16C4 /* Realtime in Frameworks */,
+				B1D0D6482EB190FA002A16C4 /* Supabase in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1900BC72EB30E4100A65DEE /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				B19C35F12ED6B70E0046D48C /* ViewModels */,
+				B19C35F02ED6B6F50046D48C /* Views */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		B1900C002EB3130400A65DEE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B1900BF62EB3130400A65DEE /* Assets.xcassets */,
+				B1900BF72EB3130400A65DEE /* ContentView.swift */,
+				B1900BFE2EB3130400A65DEE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B19C35D92ED6B3F90046D48C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B19C35DA2ED6B4090046D48C /* Components */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B1A731DF2EDB9D2800E51E6B /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				B1DD44542EE297A0004A6082 /* DashboardViewModel.swift */,
+				B1A731E62EDBD15200E51E6B /* View */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		B1A731EB2EDBD47B00E51E6B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B1DB2C8A2EDE5A52005738D9 /* DataSource */,
+				B1DB2C822EDE580F005738D9 /* Mappers */,
+				B1A731EC2EDBD48300E51E6B /* Repositories */,
+				B1AA08F12ED7D27900B0A644 /* Services */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B1A7C7F62ECE8F690063FA35 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				B1A7C7F92ECE8FE20063FA35 /* Helpers */,
+				B1A7C7F82ECE8F850063FA35 /* Views */,
+				B1A7C7F72ECE8F780063FA35 /* RegisterViewModel */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		B1A963DA2E4C1EE800741ABD = {
+			isa = PBXGroup;
+			children = (
+				B1DB2C942EDE5FDA005738D9 /* Infrastructure */,
+				B1AA08F22ED7D40600B0A644 /* Domain */,
+				B1AA08F02ED7D25200B0A644 /* Models */,
+				B1D6423A2ECD5E29006A6283 /* Features */,
+				B1D642362ECD5D66006A6283 /* Core */,
+				B1D642352ECD5D5C006A6283 /* App */,
+				B1900C002EB3130400A65DEE /* Preview Content */,
+				B1A963E42E4C1EE800741ABD /* Products */,
+				B19C35D92ED6B3F90046D48C /* Shared */,
+			);
+			sourceTree = "<group>";
+		};
+		B1A963E42E4C1EE800741ABD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1A963E32E4C1EE800741ABD /* MiTiendita.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1AA08F02ED7D25200B0A644 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B1A731F12EDBDC7300E51E6B /* StoreConfiguration.swift */,
+				B1A731EF2EDBDA9500E51E6B /* UserMetadata.swift */,
+				B1AA08D82ED7D1D600B0A644 /* Persona.swift */,
+				B1DB2C7F2EDE5633005738D9 /* ClienteModel.xcdatamodeld */,
+				B1A731B12EDB73C800E51E6B /* OnboardingPage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B1AA08F12ED7D27900B0A644 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B1D0D6492EB19145002A16C4 /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B1AA08F22ED7D40600B0A644 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B1DB2C7D2EDE553E005738D9 /* ClienteEntity.swift */,
+				B1A731EB2EDBD47B00E51E6B /* Data */,
+				B1AA08F72ED7D46900B0A644 /* UseCase */,
+				B1AA08F32ED7D41C00B0A644 /* Repositories */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B1D642352ECD5D5C006A6283 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B1D1A4032EE4AE9A00347100 /* DashboardCoordinator.swift */,
+				B1DD44522EE29604004A6082 /* DashboardCoordinatorView.swift */,
+				B1B0121A2EE12F8700D7BC50 /* OnboardingCoordinatorView.swift */,
+				B1B012182EE12F6C00D7BC50 /* OnboardingScreen.swift */,
+				B1B012162EE12EE300D7BC50 /* AppFlow.swift */,
+				B19159912EDFB401008037A0 /* RegisterCoordinator.swift */,
+				B1B011F02EE1039900D7BC50 /* OnboardingCoordinator.swift */,
+				B1AA090D2ED7F90200B0A644 /* Coordinator.swift */,
+				B1900BFC2EB3130400A65DEE /* MiTienditaApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B1D642362ECD5D66006A6283 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B1D642382ECD5DD1006A6283 /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B1D6423A2ECD5E29006A6283 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				B1A731DF2EDB9D2800E51E6B /* Dashboard */,
+				B1A7C7F62ECE8F690063FA35 /* Register */,
+				B1D6423B2ECD5E39006A6283 /* Auth */,
+				B1900BC72EB30E4100A65DEE /* Onboarding */,
+				B1E457052EB46864003731E9 /* DetailsView */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		B1D6423B2ECD5E39006A6283 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				B1A731E42EDBD12700E51E6B /* ViewModel */,
+				B1A731E32EDBD11800E51E6B /* Views */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		B1DB2C942EDE5FDA005738D9 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				B1DB2C952EDE6012005738D9 /* Persistence */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1A963E22E4C1EE800741ABD /* MiTiendita */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1A963F12E4C1EEA00741ABD /* Build configuration list for PBXNativeTarget "MiTiendita" */;
+			buildPhases = (
+				B1A963DF2E4C1EE800741ABD /* Sources */,
+				B1A963E02E4C1EE800741ABD /* Frameworks */,
+				B1A963E12E4C1EE800741ABD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B19C35DA2ED6B4090046D48C /* Components */,
+				B19C35F02ED6B6F50046D48C /* Views */,
+				B19C35F12ED6B70E0046D48C /* ViewModels */,
+				B1A731E32EDBD11800E51E6B /* Views */,
+				B1A731E42EDBD12700E51E6B /* ViewModel */,
+				B1A731E62EDBD15200E51E6B /* View */,
+				B1A731EC2EDBD48300E51E6B /* Repositories */,
+				B1A7C7F72ECE8F780063FA35 /* RegisterViewModel */,
+				B1A7C7F82ECE8F850063FA35 /* Views */,
+				B1A7C7F92ECE8FE20063FA35 /* Helpers */,
+				B1AA08F32ED7D41C00B0A644 /* Repositories */,
+				B1AA08F72ED7D46900B0A644 /* UseCase */,
+				B1DB2C822EDE580F005738D9 /* Mappers */,
+				B1DB2C8A2EDE5A52005738D9 /* DataSource */,
+				B1E457052EB46864003731E9 /* DetailsView */,
+			);
+			name = MiTiendita;
+			packageProductDependencies = (
+				B1D0D6432EB190FA002A16C4 /* Auth */,
+				B1D0D6452EB190FA002A16C4 /* Realtime */,
+				B1D0D6472EB190FA002A16C4 /* Supabase */,
+				B1D0D64C2EB19175002A16C4 /* KeychainAccess */,
+			);
+			productName = MiTiendita;
+			productReference = B1A963E32E4C1EE800741ABD /* MiTiendita.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1A963DB2E4C1EE800741ABD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					B1A963E22E4C1EE800741ABD = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = B1A963DE2E4C1EE800741ABD /* Build configuration list for PBXProject "MiTiendita" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1A963DA2E4C1EE800741ABD;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B1D0D6422EB190FA002A16C4 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+				B1D0D64B2EB19175002A16C4 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B1A963E42E4C1EE800741ABD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1A963E22E4C1EE800741ABD /* MiTiendita */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1A963E12E4C1EE800741ABD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1900C092EB3130400A65DEE /* Assets.xcassets in Resources */,
+				B1900C0A2EB3130400A65DEE /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1A963DF2E4C1EE800741ABD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1DD44532EE29604004A6082 /* DashboardCoordinatorView.swift in Sources */,
+				B1DD44552EE297A0004A6082 /* DashboardViewModel.swift in Sources */,
+				B1D0D64A2EB19145002A16C4 /* AuthService.swift in Sources */,
+				B1B012172EE12EE300D7BC50 /* AppFlow.swift in Sources */,
+				B1B011F62EE1039900D7BC50 /* OnboardingCoordinator.swift in Sources */,
+				B1D1A4042EE4AEA700347100 /* DashboardCoordinator.swift in Sources */,
+				B1A731B22EDB73C800E51E6B /* OnboardingPage.swift in Sources */,
+				B1AA090E2ED7F90600B0A644 /* Coordinator.swift in Sources */,
+				B1900C052EB3130400A65DEE /* ContentView.swift in Sources */,
+				B1A731F02EDBDA9800E51E6B /* UserMetadata.swift in Sources */,
+				B1DB2C7E2EDE553E005738D9 /* ClienteEntity.swift in Sources */,
+				B1A731F22EDBDC7400E51E6B /* StoreConfiguration.swift in Sources */,
+				B1B0121B2EE12F8700D7BC50 /* OnboardingCoordinatorView.swift in Sources */,
+				B19159922EDFB408008037A0 /* RegisterCoordinator.swift in Sources */,
+				B1900C072EB3130400A65DEE /* MiTienditaApp.swift in Sources */,
+				B1DB2C812EDE5633005738D9 /* ClienteModel.xcdatamodeld in Sources */,
+				B1AA08D92ED7D1D600B0A644 /* Persona.swift in Sources */,
+				B1B012192EE12F6C00D7BC50 /* OnboardingScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B1A963EF2E4C1EEA00741ABD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B1A963F02E4C1EEA00741ABD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1A963F22E4C1EEA00741ABD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MiTiendita/Preview Content\"";
+				DEVELOPMENT_TEAM = 63KDPU835H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Necesitamos acceder a la cámara para tomar fotos de los clientes\n";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = home.MiTiendita;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1A963F32E4C1EEA00741ABD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MiTiendita/Preview Content\"";
+				DEVELOPMENT_TEAM = 63KDPU835H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Necesitamos acceder a la cámara para tomar fotos de los clientes\n";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = home.MiTiendita;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1A963DE2E4C1EE800741ABD /* Build configuration list for PBXProject "MiTiendita" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1A963EF2E4C1EEA00741ABD /* Debug */,
+				B1A963F02E4C1EEA00741ABD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1A963F12E4C1EEA00741ABD /* Build configuration list for PBXNativeTarget "MiTiendita" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1A963F22E4C1EEA00741ABD /* Debug */,
+				B1A963F32E4C1EEA00741ABD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B1D0D6422EB190FA002A16C4 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+		B1D0D64B2EB19175002A16C4 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B1D0D6432EB190FA002A16C4 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B1D0D6422EB190FA002A16C4 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		B1D0D6452EB190FA002A16C4 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B1D0D6422EB190FA002A16C4 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		B1D0D6472EB190FA002A16C4 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B1D0D6422EB190FA002A16C4 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+		B1D0D64C2EB19175002A16C4 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B1D0D64B2EB19175002A16C4 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		B1DB2C7F2EDE5633005738D9 /* ClienteModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B1DB2C802EDE5633005738D9 /* ClienteModel.xcdatamodel */,
+			);
+			currentVersion = B1DB2C802EDE5633005738D9 /* ClienteModel.xcdatamodel */;
+			path = ClienteModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B1A963DB2E4C1EE800741ABD /* Project object */;
+}
