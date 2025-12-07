@@ -8,7 +8,5 @@
 import Foundation
 
 protocol LoginRepository {
-    
-    func login(email: String, password: String) async throws
-    func fetchClientes() async throws -> [Persona]
+    func login(email: String, password: String)
 }
