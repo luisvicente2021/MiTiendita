@@ -1,10 +1,18 @@
-struct GetClientesUseCase {
-    private let repository: PersonaRepositoryProtocol
+//
+//  GetClientesUseCase.swift
+//  MiTiendita
+//
+//  Created by luisr on 06/12/25.
+//
+import Foundation
 
-    init(repository: PersonaRepositoryProtocol) {
+final class GetClientesUseCase {
+    private let repository: LoginRepository
+    
+    init(repository: LoginRepository) {
         self.repository = repository
     }
-
+    
     func execute() async throws -> [Persona] {
         try await repository.fetchClientes()
     }
