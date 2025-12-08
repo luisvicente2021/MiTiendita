@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SummaryView: View {
     @EnvironmentObject private var registerViewModel: RegisterPersonViewModel
-    @EnvironmentObject private var loginViewModel: LoginViewModel
+    //@EnvironmentObject private var loginViewModel: LoginViewModel
     @Environment(\.dismiss) private var dismiss
     let onNext: () -> Void
     var onFinish: ((Persona) -> Void)?
@@ -105,7 +105,7 @@ struct SummaryView: View {
             }
         }
         .fullScreenCover(isPresented: $registerViewModel.onboardingCompleted) {
-            LoginView()
+           // LoginView()  en processo
         }
     }
     
