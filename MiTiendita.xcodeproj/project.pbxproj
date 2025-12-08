@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B129885E2EE5398000B05947 /* DetailsClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B129885D2EE5398000B05947 /* DetailsClientView.swift */; };
+		B18EF3BA2EE5E34300AAF27C /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18EF3B92EE5E33C00AAF27C /* RegisterCoordinator.swift */; };
+		B18EF3C32EE60A4200AAF27C /* RegisterCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18EF3C22EE60A4200AAF27C /* RegisterCoordinatorView.swift */; };
+		B18EF3C52EE60BBA00AAF27C /* ResumenCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18EF3C42EE60BBA00AAF27C /* ResumenCard.swift */; };
+		B18EF3C72EE60BD500AAF27C /* ResumenFinancieroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18EF3C62EE60BD500AAF27C /* ResumenFinancieroView.swift */; };
+		B18EF3C92EE60BFA00AAF27C /* ClienteHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18EF3C82EE60BFA00AAF27C /* ClienteHeaderView.swift */; };
 		B1900C052EB3130400A65DEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1900BF72EB3130400A65DEE /* ContentView.swift */; };
 		B1900C072EB3130400A65DEE /* MiTienditaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1900BFC2EB3130400A65DEE /* MiTienditaApp.swift */; };
 		B1900C092EB3130400A65DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1900BF62EB3130400A65DEE /* Assets.xcassets */; };
 		B1900C0A2EB3130400A65DEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1900BFE2EB3130400A65DEE /* Preview Assets.xcassets */; };
-		B19159922EDFB408008037A0 /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19159912EDFB401008037A0 /* RegisterCoordinator.swift */; };
 		B1A731B22EDB73C800E51E6B /* OnboardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A731B12EDB73C800E51E6B /* OnboardingPage.swift */; };
 		B1A731F02EDBDA9800E51E6B /* UserMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A731EF2EDBDA9500E51E6B /* UserMetadata.swift */; };
 		B1A731F22EDBDC7400E51E6B /* StoreConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A731F12EDBDC7300E51E6B /* StoreConfiguration.swift */; };
@@ -19,26 +24,29 @@
 		B1AA090E2ED7F90600B0A644 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AA090D2ED7F90200B0A644 /* Coordinator.swift */; };
 		B1B011F62EE1039900D7BC50 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B011F02EE1039900D7BC50 /* OnboardingCoordinator.swift */; };
 		B1B012172EE12EE300D7BC50 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B012162EE12EE300D7BC50 /* AppFlow.swift */; };
-		B1B012192EE12F6C00D7BC50 /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B012182EE12F6C00D7BC50 /* OnboardingScreen.swift */; };
+		B1B012192EE12F6C00D7BC50 /* EnumScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B012182EE12F6C00D7BC50 /* EnumScreen.swift */; };
 		B1B0121B2EE12F8700D7BC50 /* OnboardingCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B0121A2EE12F8700D7BC50 /* OnboardingCoordinatorView.swift */; };
 		B1D0D6442EB190FA002A16C4 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = B1D0D6432EB190FA002A16C4 /* Auth */; };
 		B1D0D6462EB190FA002A16C4 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = B1D0D6452EB190FA002A16C4 /* Realtime */; };
 		B1D0D6482EB190FA002A16C4 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = B1D0D6472EB190FA002A16C4 /* Supabase */; };
-		B1D0D64A2EB19145002A16C4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D0D6492EB19145002A16C4 /* AuthService.swift */; };
 		B1D0D64D2EB19175002A16C4 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = B1D0D64C2EB19175002A16C4 /* KeychainAccess */; };
 		B1D1A4042EE4AEA700347100 /* DashboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D1A4032EE4AE9A00347100 /* DashboardCoordinator.swift */; };
-		B1DB2C7E2EDE553E005738D9 /* ClienteEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DB2C7D2EDE553E005738D9 /* ClienteEntity.swift */; };
 		B1DB2C812EDE5633005738D9 /* ClienteModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1DB2C7F2EDE5633005738D9 /* ClienteModel.xcdatamodeld */; };
 		B1DD44532EE29604004A6082 /* DashboardCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DD44522EE29604004A6082 /* DashboardCoordinatorView.swift */; };
 		B1DD44552EE297A0004A6082 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DD44542EE297A0004A6082 /* DashboardViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B129885D2EE5398000B05947 /* DetailsClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsClientView.swift; sourceTree = "<group>"; };
+		B18EF3B92EE5E33C00AAF27C /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
+		B18EF3C22EE60A4200AAF27C /* RegisterCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinatorView.swift; sourceTree = "<group>"; };
+		B18EF3C42EE60BBA00AAF27C /* ResumenCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumenCard.swift; sourceTree = "<group>"; };
+		B18EF3C62EE60BD500AAF27C /* ResumenFinancieroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumenFinancieroView.swift; sourceTree = "<group>"; };
+		B18EF3C82EE60BFA00AAF27C /* ClienteHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClienteHeaderView.swift; sourceTree = "<group>"; };
 		B1900BF62EB3130400A65DEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1900BF72EB3130400A65DEE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B1900BFC2EB3130400A65DEE /* MiTienditaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiTienditaApp.swift; sourceTree = "<group>"; };
 		B1900BFE2EB3130400A65DEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B19159912EDFB401008037A0 /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
 		B1A731B12EDB73C800E51E6B /* OnboardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPage.swift; sourceTree = "<group>"; };
 		B1A731EF2EDBDA9500E51E6B /* UserMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMetadata.swift; sourceTree = "<group>"; };
 		B1A731F12EDBDC7300E51E6B /* StoreConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreConfiguration.swift; sourceTree = "<group>"; };
@@ -47,24 +55,15 @@
 		B1AA090D2ED7F90200B0A644 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		B1B011F02EE1039900D7BC50 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
 		B1B012162EE12EE300D7BC50 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
-		B1B012182EE12F6C00D7BC50 /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
+		B1B012182EE12F6C00D7BC50 /* EnumScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumScreen.swift; sourceTree = "<group>"; };
 		B1B0121A2EE12F8700D7BC50 /* OnboardingCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinatorView.swift; sourceTree = "<group>"; };
-		B1D0D6492EB19145002A16C4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		B1D1A4032EE4AE9A00347100 /* DashboardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCoordinator.swift; sourceTree = "<group>"; };
-		B1DB2C7D2EDE553E005738D9 /* ClienteEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClienteEntity.swift; sourceTree = "<group>"; };
 		B1DB2C802EDE5633005738D9 /* ClienteModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClienteModel.xcdatamodel; sourceTree = "<group>"; };
 		B1DD44522EE29604004A6082 /* DashboardCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCoordinatorView.swift; sourceTree = "<group>"; };
 		B1DD44542EE297A0004A6082 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		B1A731E22EDBD08F00E51E6B /* Exceptions for "Network" folder in "MiTiendita" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				SupabaseManager.swift,
-			);
-			target = B1A963E22E4C1EE800741ABD /* MiTiendita */;
-		};
 		B1DB2C982EDE60BC005738D9 /* Exceptions for "Persistence" folder in "MiTiendita" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -75,6 +74,26 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		B18EF3BC2EE608BD00AAF27C /* Comida */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Comida;
+			sourceTree = "<group>";
+		};
+		B18EF3BD2EE608C600AAF27C /* Moda */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Moda;
+			sourceTree = "<group>";
+		};
+		B19136552EE52A79000D97EC /* View */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = View;
+			sourceTree = "<group>";
+		};
+		B19136562EE52A88000D97EC /* ViewModel */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		B19C35DA2ED6B4090046D48C /* Components */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Components;
@@ -137,9 +156,6 @@
 		};
 		B1D642382ECD5DD1006A6283 /* Network */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				B1A731E22EDBD08F00E51E6B /* Exceptions for "Network" folder in "MiTiendita" target */,
-			);
 			path = Network;
 			sourceTree = "<group>";
 		};
@@ -161,11 +177,6 @@
 			path = Persistence;
 			sourceTree = "<group>";
 		};
-		B1E457052EB46864003731E9 /* DetailsView */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = DetailsView;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +194,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B129885C2EE5397900B05947 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				B18EF3C82EE60BFA00AAF27C /* ClienteHeaderView.swift */,
+				B18EF3C62EE60BD500AAF27C /* ResumenFinancieroView.swift */,
+				B18EF3C42EE60BBA00AAF27C /* ResumenCard.swift */,
+				B129885D2EE5398000B05947 /* DetailsClientView.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		B18EF3BB2EE5EFD300AAF27C /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				B18EF3C22EE60A4200AAF27C /* RegisterCoordinatorView.swift */,
+				B18EF3B92EE5E33C00AAF27C /* RegisterCoordinator.swift */,
+				B1D1A4032EE4AE9A00347100 /* DashboardCoordinator.swift */,
+				B1DD44522EE29604004A6082 /* DashboardCoordinatorView.swift */,
+				B1B0121A2EE12F8700D7BC50 /* OnboardingCoordinatorView.swift */,
+				B1B011F02EE1039900D7BC50 /* OnboardingCoordinator.swift */,
+				B1AA090D2ED7F90200B0A644 /* Coordinator.swift */,
+				B1B012162EE12EE300D7BC50 /* AppFlow.swift */,
+				B1B012182EE12F6C00D7BC50 /* EnumScreen.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		B1900BC72EB30E4100A65DEE /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +240,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B19136522EE52966000D97EC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B19136562EE52A88000D97EC /* ViewModel */,
+				B19136552EE52A79000D97EC /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		B19C35D92ED6B3F90046D48C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +260,8 @@
 		B1A731DF2EDB9D2800E51E6B /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				B18EF3BD2EE608C600AAF27C /* Moda */,
+				B18EF3BC2EE608BD00AAF27C /* Comida */,
 				B1DD44542EE297A0004A6082 /* DashboardViewModel.swift */,
 				B1A731E62EDBD15200E51E6B /* View */,
 			);
@@ -225,7 +274,6 @@
 				B1DB2C8A2EDE5A52005738D9 /* DataSource */,
 				B1DB2C822EDE580F005738D9 /* Mappers */,
 				B1A731EC2EDBD48300E51E6B /* Repositories */,
-				B1AA08F12ED7D27900B0A644 /* Services */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -275,18 +323,9 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		B1AA08F12ED7D27900B0A644 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				B1D0D6492EB19145002A16C4 /* AuthService.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 		B1AA08F22ED7D40600B0A644 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				B1DB2C7D2EDE553E005738D9 /* ClienteEntity.swift */,
 				B1A731EB2EDBD47B00E51E6B /* Data */,
 				B1AA08F72ED7D46900B0A644 /* UseCase */,
 				B1AA08F32ED7D41C00B0A644 /* Repositories */,
@@ -297,14 +336,7 @@
 		B1D642352ECD5D5C006A6283 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				B1D1A4032EE4AE9A00347100 /* DashboardCoordinator.swift */,
-				B1DD44522EE29604004A6082 /* DashboardCoordinatorView.swift */,
-				B1B0121A2EE12F8700D7BC50 /* OnboardingCoordinatorView.swift */,
-				B1B012182EE12F6C00D7BC50 /* OnboardingScreen.swift */,
-				B1B012162EE12EE300D7BC50 /* AppFlow.swift */,
-				B19159912EDFB401008037A0 /* RegisterCoordinator.swift */,
-				B1B011F02EE1039900D7BC50 /* OnboardingCoordinator.swift */,
-				B1AA090D2ED7F90200B0A644 /* Coordinator.swift */,
+				B18EF3BB2EE5EFD300AAF27C /* Coordinator */,
 				B1900BFC2EB3130400A65DEE /* MiTienditaApp.swift */,
 			);
 			path = App;
@@ -321,11 +353,12 @@
 		B1D6423A2ECD5E29006A6283 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				B129885C2EE5397900B05947 /* Details */,
+				B19136522EE52966000D97EC /* Login */,
 				B1A731DF2EDB9D2800E51E6B /* Dashboard */,
 				B1A7C7F62ECE8F690063FA35 /* Register */,
 				B1D6423B2ECD5E39006A6283 /* Auth */,
 				B1900BC72EB30E4100A65DEE /* Onboarding */,
-				B1E457052EB46864003731E9 /* DetailsView */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -363,6 +396,10 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				B18EF3BC2EE608BD00AAF27C /* Comida */,
+				B18EF3BD2EE608C600AAF27C /* Moda */,
+				B19136552EE52A79000D97EC /* View */,
+				B19136562EE52A88000D97EC /* ViewModel */,
 				B19C35DA2ED6B4090046D48C /* Components */,
 				B19C35F02ED6B6F50046D48C /* Views */,
 				B19C35F12ED6B70E0046D48C /* ViewModels */,
@@ -377,7 +414,6 @@
 				B1AA08F72ED7D46900B0A644 /* UseCase */,
 				B1DB2C822EDE580F005738D9 /* Mappers */,
 				B1DB2C8A2EDE5A52005738D9 /* DataSource */,
-				B1E457052EB46864003731E9 /* DetailsView */,
 			);
 			name = MiTiendita;
 			packageProductDependencies = (
@@ -445,9 +481,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B129885E2EE5398000B05947 /* DetailsClientView.swift in Sources */,
+				B18EF3C52EE60BBA00AAF27C /* ResumenCard.swift in Sources */,
+				B18EF3C92EE60BFA00AAF27C /* ClienteHeaderView.swift in Sources */,
 				B1DD44532EE29604004A6082 /* DashboardCoordinatorView.swift in Sources */,
 				B1DD44552EE297A0004A6082 /* DashboardViewModel.swift in Sources */,
-				B1D0D64A2EB19145002A16C4 /* AuthService.swift in Sources */,
 				B1B012172EE12EE300D7BC50 /* AppFlow.swift in Sources */,
 				B1B011F62EE1039900D7BC50 /* OnboardingCoordinator.swift in Sources */,
 				B1D1A4042EE4AEA700347100 /* DashboardCoordinator.swift in Sources */,
@@ -455,14 +493,15 @@
 				B1AA090E2ED7F90600B0A644 /* Coordinator.swift in Sources */,
 				B1900C052EB3130400A65DEE /* ContentView.swift in Sources */,
 				B1A731F02EDBDA9800E51E6B /* UserMetadata.swift in Sources */,
-				B1DB2C7E2EDE553E005738D9 /* ClienteEntity.swift in Sources */,
+				B18EF3C32EE60A4200AAF27C /* RegisterCoordinatorView.swift in Sources */,
+				B18EF3BA2EE5E34300AAF27C /* RegisterCoordinator.swift in Sources */,
 				B1A731F22EDBDC7400E51E6B /* StoreConfiguration.swift in Sources */,
 				B1B0121B2EE12F8700D7BC50 /* OnboardingCoordinatorView.swift in Sources */,
-				B19159922EDFB408008037A0 /* RegisterCoordinator.swift in Sources */,
 				B1900C072EB3130400A65DEE /* MiTienditaApp.swift in Sources */,
+				B18EF3C72EE60BD500AAF27C /* ResumenFinancieroView.swift in Sources */,
 				B1DB2C812EDE5633005738D9 /* ClienteModel.xcdatamodeld in Sources */,
 				B1AA08D92ED7D1D600B0A644 /* Persona.swift in Sources */,
-				B1B012192EE12F6C00D7BC50 /* OnboardingScreen.swift in Sources */,
+				B1B012192EE12F6C00D7BC50 /* EnumScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
