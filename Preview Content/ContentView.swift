@@ -18,9 +18,9 @@ struct ContentView: View {
                 OnboardingCoordinatorView(coordinator: OnboardingCoordinator(appCoordinator: coordinator))
                 
             case .register:
-                OnboardingCoordinatorView(coordinator: OnboardingCoordinator(appCoordinator: coordinator))
+                RegisterCoordinatorView(coordinator: RegisterCoordinator(appCoordinator: coordinator))
                 
-            case .auth:
+            case .auth: // en procesoo
                 OnboardingCoordinatorView(coordinator: OnboardingCoordinator(appCoordinator: coordinator))
                 
             case .dashboard:
