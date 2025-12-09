@@ -9,4 +9,5 @@ import Foundation
 
 protocol LoginRepository {
     func login(email: String, password: String)
+    func fetchClientes() async throws -> [Persona]
 }
