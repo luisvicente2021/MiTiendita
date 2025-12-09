@@ -8,7 +8,7 @@ import SwiftUI
 
 struct SecurityView: View {
     @EnvironmentObject private var onboardingViewModel: OnboardingViewModel
-    let onNext: () -> Void
+    let onFinish: () -> Void
     let onBack: () -> Void
     
     var body: some View {
@@ -79,7 +79,7 @@ struct SecurityView: View {
                     ActionButton(title: "Comenzar a Usar Mi Tiendita", action: {
                         withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
                             onboardingViewModel.completeOnboarding()
-                            onNext()
+                            onFinish()
                         }
                     })
                     Button(action: {
