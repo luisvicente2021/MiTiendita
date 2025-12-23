@@ -13,7 +13,7 @@ final class GetClientesUseCase {
         self.repository = repository
     }
     
-    func execute() async throws -> [Persona] {
-        try await repository.fetchClientes()
-    }
+   // func execute() async throws -> [Persona] {
+    //    try await repository.fetchClientes()
+    //}
 }

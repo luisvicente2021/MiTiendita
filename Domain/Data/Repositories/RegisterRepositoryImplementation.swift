@@ -8,9 +8,9 @@ import Foundation
 
 final class RegisterRepositoryImplementation: RegisterRepository {
     
-    private let dataSource: CustomerLocalDataSource
+    private let dataSource: LocalAuthService
     
-    init(dataSource: CustomerLocalDataSource) {
+    init(dataSource: LocalAuthService) {
         self.dataSource = dataSource
     }
     

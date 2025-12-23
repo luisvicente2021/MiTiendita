@@ -8,9 +8,8 @@ import SwiftUI
 
 struct SecurityView: View {
     @EnvironmentObject private var onboardingViewModel: OnboardingViewModel
-    let onNext: () -> Void
-    let onBack: () -> Void
-    
+    @EnvironmentObject var coordinator: AppCoordinator
+  
     var body: some View {
         ScrollView {
             VStack {
@@ -79,11 +78,11 @@ struct SecurityView: View {
                     ActionButton(title: "Comenzar a Usar Mi Tiendita", action: {
                         withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
                             onboardingViewModel.completeOnboarding()
-                            onNext()
+                            coordinator.push(.dashboard)
                         }
                     })
                     Button(action: {
-                        onBack()
+                        coordinator.push(.salesTracking)
                     }) {
                         Text("Atrás")
                             .font(.headline)

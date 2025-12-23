@@ -9,9 +9,9 @@ import Foundation
 
 final class ClienteRepositoryImpl: PersonaRepository {
     
-    private let localDataSource: CustomerLocalDataSource
+    private let localDataSource: LocalAuthService
     
-    init(localDataSource: CustomerLocalDataSource) {
+    init(localDataSource: LocalAuthService) {
         self.localDataSource = localDataSource
     }
     
@@ -24,11 +24,11 @@ final class ClienteRepositoryImpl: PersonaRepository {
     }
     
     func updateCliente(_ cliente: Persona) throws {
-        try localDataSource.updateCliente(cliente)
+        try localDataSource.updateUser(user: cliente)
     }
     
     func deleteCliente(id: String) throws {
-        try localDataSource.deleteCliente(id: id)
+        try localDataSource.deleteUser(userId: id)
     }
 }
 

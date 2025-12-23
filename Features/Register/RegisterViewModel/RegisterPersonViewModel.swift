@@ -106,7 +106,7 @@ final class RegisterPersonViewModel: ObservableObject {
         errorMessage = nil
         
         // Obtener el contexto desde tu datasource
-        let context = PersistenceController.shared.context
+        let context = CoreDataManager.shared.context //PersistenceController.shared.context
         self.persona = persona
         
         

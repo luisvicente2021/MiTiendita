@@ -4,28 +4,33 @@
 //
 //  Created by luisr on 03/12/25.
 //
-
 import Foundation
 
-enum OnboardingScreen {
+enum AppRoute: Hashable {
+    // Onboarding
     case welcome
     case clientManagement
     case loanManagement
     case salesTracking
     case security
     
-}
-
-
-enum DashboardScreen {
-    case dashboard
-   // case details
+    // Auth
+    case login
     
-}
-
-enum RegisterScreen {
+    // Register
     case storeOwnerInfo
     case storeAddress
     case preferences
     case summary
+    
+    // Main App
+    case dashboard
+    /*case clientes
+    case clienteDetail(id: String)
+    case registrarCliente
+    case pagos
+    case registrarPago
+    case settings*/
 }
+
+

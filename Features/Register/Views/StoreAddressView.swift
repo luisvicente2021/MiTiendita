@@ -10,8 +10,7 @@ import SwiftUI
 
 struct StoreAddressView: View {
     @EnvironmentObject private var viewModel: RegisterPersonViewModel
-    let onNext: () -> Void
-    let onBack: () -> Void
+    @EnvironmentObject private var coordinator: AppCoordinator
     @FocusState private var focusedField: Field?
     
     enum Field {
@@ -115,7 +114,7 @@ struct StoreAddressView: View {
         HStack(spacing: 12) {
             Button(action: {
                 withAnimation {
-                    onBack()
+                    coordinator.pop()
                 }
             }) {
                 Text("Atrás")
@@ -129,7 +128,7 @@ struct StoreAddressView: View {
             
             Button(action: {
                 focusedField = nil
-                onNext()
+                coordinator.push(.preferences)
                 
             }) {
                 Text("Siguiente")

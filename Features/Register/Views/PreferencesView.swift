@@ -9,8 +9,7 @@ import SwiftUI
 
 struct PreferencesView: View {
     @EnvironmentObject private var viewModel: RegisterPersonViewModel
-    let onNext: () -> Void
-    let onBack: () -> Void
+    @EnvironmentObject private var coordinator: AppCoordinator
     
     var body: some View {
         VStack(spacing: 0) {
@@ -128,7 +127,7 @@ struct PreferencesView: View {
         HStack(spacing: 12) {
             Button(action: {
                 withAnimation {
-                    onBack()
+                    coordinator.pop()
                 }
             }) {
                 Text("Atrás")
@@ -142,7 +141,7 @@ struct PreferencesView: View {
             
             Button(action: {
                 withAnimation {
-                    onNext()
+                    coordinator.push(.summary)
                 }
             }) {
                 Text("Siguiente")

@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-
 struct WelcomeView: View {
     @EnvironmentObject var onboardingViewModel: OnboardingViewModel
-    let onNext: () -> Void
+    @EnvironmentObject var coordinator: AppCoordinator
+    @EnvironmentObject var appState: AppState
     
     var body: some View {
         ZStack {
@@ -45,7 +45,9 @@ struct WelcomeView: View {
                 
                 Spacer()
                 
-                Button(action: onNext) {
+                Button(action: {
+                    coordinator.push(.clientManagement)
+                }) {
                     Text("Comenzar")
                         .font(.headline)
                         .foregroundColor(.white)
@@ -64,7 +66,7 @@ struct WelcomeView: View {
                 HStack {
                     Spacer()
                     Button(action: {
-                        
+                     //   AppState.completeOnboarding()
                         
                     }) {
                         Text("Saltar")

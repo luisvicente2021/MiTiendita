@@ -9,55 +9,47 @@
 /* Begin PBXBuildFile section */
 		B114BC882EE7A03A009303CF /* ClienteModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B114BC862EE7A03A009303CF /* ClienteModel.xcdatamodeld */; };
 		B129885E2EE5398000B05947 /* DetailsClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B129885D2EE5398000B05947 /* DetailsClientView.swift */; };
-		B18EF3BA2EE5E34300AAF27C /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18EF3B92EE5E33C00AAF27C /* RegisterCoordinator.swift */; };
-		B18EF3C32EE60A4200AAF27C /* RegisterCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18EF3C22EE60A4200AAF27C /* RegisterCoordinatorView.swift */; };
 		B18EF3C52EE60BBA00AAF27C /* ResumenCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18EF3C42EE60BBA00AAF27C /* ResumenCard.swift */; };
 		B18EF3C72EE60BD500AAF27C /* ResumenFinancieroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18EF3C62EE60BD500AAF27C /* ResumenFinancieroView.swift */; };
 		B18EF3C92EE60BFA00AAF27C /* ClienteHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18EF3C82EE60BFA00AAF27C /* ClienteHeaderView.swift */; };
 		B1900C052EB3130400A65DEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1900BF72EB3130400A65DEE /* ContentView.swift */; };
 		B1900C072EB3130400A65DEE /* MiTienditaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1900BFC2EB3130400A65DEE /* MiTienditaApp.swift */; };
 		B1900C092EB3130400A65DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1900BF62EB3130400A65DEE /* Assets.xcassets */; };
+		B196A4AA2EF8825300673ECC /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B196A4A92EF8825300673ECC /* AppState.swift */; };
+		B196A4B02EF88E7000673ECC /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B196A4AF2EF88E7000673ECC /* RootView.swift */; };
 		B1A731B22EDB73C800E51E6B /* OnboardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A731B12EDB73C800E51E6B /* OnboardingPage.swift */; };
 		B1A731F02EDBDA9800E51E6B /* UserMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A731EF2EDBDA9500E51E6B /* UserMetadata.swift */; };
 		B1A731F22EDBDC7400E51E6B /* StoreConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A731F12EDBDC7300E51E6B /* StoreConfiguration.swift */; };
 		B1AA08D92ED7D1D600B0A644 /* Persona.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AA08D82ED7D1D600B0A644 /* Persona.swift */; };
 		B1AA090E2ED7F90600B0A644 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AA090D2ED7F90200B0A644 /* Coordinator.swift */; };
-		B1B011F62EE1039900D7BC50 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B011F02EE1039900D7BC50 /* OnboardingCoordinator.swift */; };
 		B1B012172EE12EE300D7BC50 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B012162EE12EE300D7BC50 /* AppFlow.swift */; };
-		B1B012192EE12F6C00D7BC50 /* EnumScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B012182EE12F6C00D7BC50 /* EnumScreen.swift */; };
-		B1B0121B2EE12F8700D7BC50 /* OnboardingCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B0121A2EE12F8700D7BC50 /* OnboardingCoordinatorView.swift */; };
+		B1B012192EE12F6C00D7BC50 /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B012182EE12F6C00D7BC50 /* AppRoute.swift */; };
 		B1D0D6442EB190FA002A16C4 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = B1D0D6432EB190FA002A16C4 /* Auth */; };
 		B1D0D6462EB190FA002A16C4 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = B1D0D6452EB190FA002A16C4 /* Realtime */; };
 		B1D0D6482EB190FA002A16C4 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = B1D0D6472EB190FA002A16C4 /* Supabase */; };
 		B1D0D64D2EB19175002A16C4 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = B1D0D64C2EB19175002A16C4 /* KeychainAccess */; };
-		B1D1A4042EE4AEA700347100 /* DashboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D1A4032EE4AE9A00347100 /* DashboardCoordinator.swift */; };
-		B1DD44532EE29604004A6082 /* DashboardCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DD44522EE29604004A6082 /* DashboardCoordinatorView.swift */; };
 		B1DD44552EE297A0004A6082 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DD44542EE297A0004A6082 /* DashboardViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B114BC872EE7A03A009303CF /* ClienteModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClienteModel.xcdatamodel; sourceTree = "<group>"; };
 		B129885D2EE5398000B05947 /* DetailsClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsClientView.swift; sourceTree = "<group>"; };
-		B18EF3B92EE5E33C00AAF27C /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
-		B18EF3C22EE60A4200AAF27C /* RegisterCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinatorView.swift; sourceTree = "<group>"; };
 		B18EF3C42EE60BBA00AAF27C /* ResumenCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumenCard.swift; sourceTree = "<group>"; };
 		B18EF3C62EE60BD500AAF27C /* ResumenFinancieroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumenFinancieroView.swift; sourceTree = "<group>"; };
 		B18EF3C82EE60BFA00AAF27C /* ClienteHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClienteHeaderView.swift; sourceTree = "<group>"; };
 		B1900BF62EB3130400A65DEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1900BF72EB3130400A65DEE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B1900BFC2EB3130400A65DEE /* MiTienditaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiTienditaApp.swift; sourceTree = "<group>"; };
+		B196A4A92EF8825300673ECC /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		B196A4AF2EF88E7000673ECC /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		B1A731B12EDB73C800E51E6B /* OnboardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPage.swift; sourceTree = "<group>"; };
 		B1A731EF2EDBDA9500E51E6B /* UserMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMetadata.swift; sourceTree = "<group>"; };
 		B1A731F12EDBDC7300E51E6B /* StoreConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreConfiguration.swift; sourceTree = "<group>"; };
 		B1A963E32E4C1EE800741ABD /* MiTiendita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiTiendita.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1AA08D82ED7D1D600B0A644 /* Persona.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persona.swift; sourceTree = "<group>"; };
 		B1AA090D2ED7F90200B0A644 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		B1B011F02EE1039900D7BC50 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
 		B1B012162EE12EE300D7BC50 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
-		B1B012182EE12F6C00D7BC50 /* EnumScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumScreen.swift; sourceTree = "<group>"; };
-		B1B0121A2EE12F8700D7BC50 /* OnboardingCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinatorView.swift; sourceTree = "<group>"; };
-		B1D1A4032EE4AE9A00347100 /* DashboardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCoordinator.swift; sourceTree = "<group>"; };
-		B1DD44522EE29604004A6082 /* DashboardCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCoordinatorView.swift; sourceTree = "<group>"; };
+		B1B012182EE12F6C00D7BC50 /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
 		B1DD44542EE297A0004A6082 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +57,7 @@
 		B1DB2C982EDE60BC005738D9 /* Exceptions for "Persistence" folder in "MiTiendita" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				LocalAuthService.swift,
 				PersistenceController.swift,
 			);
 			target = B1A963E22E4C1EE800741ABD /* MiTiendita */;
@@ -206,15 +199,11 @@
 		B18EF3BB2EE5EFD300AAF27C /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				B18EF3C22EE60A4200AAF27C /* RegisterCoordinatorView.swift */,
-				B18EF3B92EE5E33C00AAF27C /* RegisterCoordinator.swift */,
-				B1D1A4032EE4AE9A00347100 /* DashboardCoordinator.swift */,
-				B1DD44522EE29604004A6082 /* DashboardCoordinatorView.swift */,
-				B1B0121A2EE12F8700D7BC50 /* OnboardingCoordinatorView.swift */,
-				B1B011F02EE1039900D7BC50 /* OnboardingCoordinator.swift */,
+				B196A4AF2EF88E7000673ECC /* RootView.swift */,
+				B196A4A92EF8825300673ECC /* AppState.swift */,
 				B1AA090D2ED7F90200B0A644 /* Coordinator.swift */,
 				B1B012162EE12EE300D7BC50 /* AppFlow.swift */,
-				B1B012182EE12F6C00D7BC50 /* EnumScreen.swift */,
+				B1B012182EE12F6C00D7BC50 /* AppRoute.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -480,24 +469,20 @@
 				B129885E2EE5398000B05947 /* DetailsClientView.swift in Sources */,
 				B18EF3C52EE60BBA00AAF27C /* ResumenCard.swift in Sources */,
 				B18EF3C92EE60BFA00AAF27C /* ClienteHeaderView.swift in Sources */,
-				B1DD44532EE29604004A6082 /* DashboardCoordinatorView.swift in Sources */,
+				B196A4B02EF88E7000673ECC /* RootView.swift in Sources */,
 				B1DD44552EE297A0004A6082 /* DashboardViewModel.swift in Sources */,
 				B1B012172EE12EE300D7BC50 /* AppFlow.swift in Sources */,
-				B1B011F62EE1039900D7BC50 /* OnboardingCoordinator.swift in Sources */,
-				B1D1A4042EE4AEA700347100 /* DashboardCoordinator.swift in Sources */,
 				B1A731B22EDB73C800E51E6B /* OnboardingPage.swift in Sources */,
 				B1AA090E2ED7F90600B0A644 /* Coordinator.swift in Sources */,
 				B1900C052EB3130400A65DEE /* ContentView.swift in Sources */,
 				B1A731F02EDBDA9800E51E6B /* UserMetadata.swift in Sources */,
-				B18EF3C32EE60A4200AAF27C /* RegisterCoordinatorView.swift in Sources */,
-				B18EF3BA2EE5E34300AAF27C /* RegisterCoordinator.swift in Sources */,
+				B196A4AA2EF8825300673ECC /* AppState.swift in Sources */,
 				B1A731F22EDBDC7400E51E6B /* StoreConfiguration.swift in Sources */,
-				B1B0121B2EE12F8700D7BC50 /* OnboardingCoordinatorView.swift in Sources */,
 				B1900C072EB3130400A65DEE /* MiTienditaApp.swift in Sources */,
 				B114BC882EE7A03A009303CF /* ClienteModel.xcdatamodeld in Sources */,
 				B18EF3C72EE60BD500AAF27C /* ResumenFinancieroView.swift in Sources */,
 				B1AA08D92ED7D1D600B0A644 /* Persona.swift in Sources */,
-				B1B012192EE12F6C00D7BC50 /* EnumScreen.swift in Sources */,
+				B1B012192EE12F6C00D7BC50 /* AppRoute.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,7 +615,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MiTiendita/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"$(SRCROOT)/Preview Content\"";
 				DEVELOPMENT_TEAM = 63KDPU835H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -661,7 +646,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MiTiendita/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"$(SRCROOT)/Preview Content\"";
 				DEVELOPMENT_TEAM = 63KDPU835H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

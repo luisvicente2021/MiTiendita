@@ -7,7 +7,7 @@
 
 import Foundation
 import CoreData
-
+/*
 
 final class CustomerLocalDataSource {
     
@@ -134,3 +134,4 @@ final class CustomerLocalDataSource {
         return try context.fetch(request).first != nil
     }
 }
+*/

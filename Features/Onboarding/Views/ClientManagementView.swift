@@ -7,8 +7,7 @@
 import SwiftUI
 
 struct ClientManagementView: View {
-    let onNext: () -> Void
-    let onBack: () -> Void
+    @EnvironmentObject var coordinator: AppCoordinator
     
     var body: some View {
         VStack {
@@ -87,10 +86,10 @@ struct ClientManagementView: View {
             Spacer()
             
             NavigationButtons(onBack: {
-                onBack()
+                coordinator.pop()
                 print("Atras")
             }, onNext: {
-                onNext()
+                coordinator.push(.loanManagement)
                 print("Adelante")
             })
             .padding(.horizontal, 40)
