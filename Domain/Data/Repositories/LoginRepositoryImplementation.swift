@@ -7,25 +7,18 @@
 
 import Foundation
 final class LoginRepositoryImplementation: LoginRepository {
-    
-    
+   
     @Published var personas: [Persona] = []
     @Published var errorMessage: String = ""
-    private let dataSource: CustomerLocalDataSource
+    private let dataSource: LocalAuthService
     
-    init(dataSource: CustomerLocalDataSource) {
+    init(dataSource: LocalAuthService) {
         self.dataSource = dataSource
     }
     
     func login(email: String, password: String) async {
         do {
-            let success = try  dataSource.loginLocal(email: email, password: password)
-            
-            if success {
-                print("Login correcto")
-            } else {
-                print("Credenciales incorrectas")
-            }
+            let success = try  dataSource.signIn(email: email, password: password)
             
         } catch {
             print("❌ Error en login local:", error)
@@ -33,10 +26,10 @@ final class LoginRepositoryImplementation: LoginRepository {
     }
     
     
-    func fetchClientes() async throws -> [Persona] {
+  //  func fetchClientes() async throws -> [Persona] {
         
-        try dataSource.fetchClientes()
+    //    try dataSource.fetchClientes()
         
-    }
+   // }
     
 }

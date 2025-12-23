@@ -13,9 +13,9 @@ class DashboardViewModel: ObservableObject {
     
     @Published var clientes: [Persona] = []
     
-    private let dataSource: CustomerLocalDataSource
+    private let dataSource: LocalAuthService
     
-    init(dataSource: CustomerLocalDataSource = CustomerLocalDataSource()) {
+    init(dataSource: LocalAuthService = LocalAuthService()) {
         self.dataSource = dataSource
         loadClientes()
     }
@@ -31,7 +31,7 @@ class DashboardViewModel: ObservableObject {
     
     func deleteCliente(_ id: String) {
         do {
-            try dataSource.deleteCliente(id: id)
+            try dataSource.deleteUser(userId: id)
             loadClientes()  // Recargar lista después de borrar
         } catch {
             print("❌ Error al eliminar:", error)

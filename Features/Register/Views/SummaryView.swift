@@ -9,9 +9,11 @@ import SwiftUI
 
 struct SummaryView: View {
     @EnvironmentObject private var registerViewModel: RegisterPersonViewModel
+    @EnvironmentObject private var loginViewModel: LoginViewModel
+
     //@EnvironmentObject private var loginViewModel: LoginViewModel
-    @Environment(\.dismiss) private var dismiss
-    let onNext: () -> Void
+    //@Environment(\.dismiss) private var dismiss
+    @EnvironmentObject private var coordinator: AppCoordinator
     var onFinish: ((Persona) -> Void)?
     
     var body: some View {
@@ -113,7 +115,7 @@ struct SummaryView: View {
         HStack {
             Button(action: {
                 // Regresar a preferencias
-                dismiss()
+              //  dismiss()
             }) {
                 Image(systemName: "chevron.left")
                     .font(.title3)
@@ -137,7 +139,7 @@ struct SummaryView: View {
                 
                 Task {
                     await registerViewModel.register(nuevaPersona: nuevaPersona)
-                    onNext()
+                    coordinator.push(.dashboard)
                     onFinish?(nuevaPersona)
                 }
             }) {

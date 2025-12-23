@@ -9,8 +9,8 @@ import SwiftUI
 
 struct StoreOwnerInfoView: View {
     @EnvironmentObject private var viewModel: RegisterPersonViewModel
+    @EnvironmentObject private var coordinator: AppCoordinator
     @FocusState private var focusedField: Field?
-    let onNext: () -> Void
     @State private var showCamera = false
     
     enum Field {
@@ -145,7 +145,7 @@ struct StoreOwnerInfoView: View {
             Button(action: {
                 focusedField = nil
                 withAnimation {
-                    onNext()
+                    coordinator.push(.storeAddress)
                 }
             }) {
                 Text("Siguiente")

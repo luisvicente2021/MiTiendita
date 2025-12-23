@@ -8,7 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var coordinator = AppCoordinator()
+    var body: some View {
+        NavigationStack {
+        }
+        
+    }
+}
+/*
+struct ContentView: View {
+    @StateObject private var coordinator = AppCoordinator(appState: <#AppState#>)
     
     var body: some View {
         NavigationStack {
@@ -33,3 +41,4 @@ struct ContentView: View {
         
     }
 }
+*/

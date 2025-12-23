@@ -31,11 +31,12 @@ class LoginViewModel: ObservableObject {
         }
     }
     
-    func loadClientes() async {
+   /* func loadClientes() async {
         do {
             clientes = try await getClientesUseCase.execute()
         } catch {
             errorMessage = "Error al cargar clientes"
         }
     }
+    */
 }

@@ -7,9 +7,7 @@
 import SwiftUI
 
 struct SalesTrackingView: View {
-    let onNext: () -> Void
-    let onBack: () -> Void
-    
+    @EnvironmentObject var coordinator: AppCoordinator
     var body: some View {
         VStack {
             
@@ -89,10 +87,10 @@ struct SalesTrackingView: View {
             
             NavigationButtons(onBack: {
                 print("Atras")
-                onBack()
+                coordinator.pop()
             }, onNext: {
                 print("Adelante")
-                onNext()
+                coordinator.push(.security)
             })
             .padding(.horizontal, 40)
             .padding(.bottom, 30)
