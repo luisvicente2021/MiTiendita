@@ -10,6 +10,7 @@ import SwiftUI
 @MainActor
 final class AppCoordinator: ObservableObject  {
     @Published var flow: AppFlow = .onboarding
+
     var persona: Persona?
     
     let loginRepository : LoginRepositoryImplementation
@@ -50,7 +51,6 @@ final class AppCoordinator: ObservableObject  {
 extension AppCoordinator {
     @MainActor func didFinishOnboarding() {
         self.flow = .register   // cambias el flujo
-        
     }
 }
 */

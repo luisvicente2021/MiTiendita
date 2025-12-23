@@ -107,7 +107,7 @@ struct SummaryView: View {
             }
         }
         .fullScreenCover(isPresented: $registerViewModel.onboardingCompleted) {
-            LoginView()
+           // LoginView()  en processo
         }
     }
     

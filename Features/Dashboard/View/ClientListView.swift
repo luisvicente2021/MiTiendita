@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ClientesListView: View {
-    
     @StateObject var viewModel = DashboardViewModel()
     
     var body: some View {
@@ -25,29 +24,35 @@ struct ClientesListView: View {
                     
                 } else {
                     ForEach(viewModel.clientes) { cliente in
-                        ClienteCardView(cliente: cliente)
-                            .padding(.horizontal)
+                        NavigationLink(destination: ClienteDetalleView(cliente: cliente)) {
+                            ClienteCardView(cliente: cliente)
+                                .padding(.horizontal)
+                        }
+                        .buttonStyle(PlainButtonStyle())
                     }
+                    
+                    
                 }
                 
             }
-            .background(Color(.systemGroupedBackground))
-            .navigationTitle("Clientes")
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
-                        // Acción para agregar cliente
-                    } label: {
-                        Image(systemName: "plus")
-                    }
+            
+        }
+        .background(Color(.systemGroupedBackground))
+        .navigationTitle("Clientes")
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button {
+                    // Acción para agregar cliente
+                } label: {
+                    Image(systemName: "plus")
                 }
             }
-            .onAppear {
-                viewModel.loadClientes()
-            }
-            .refreshable {
-                viewModel.loadClientes()
-            }
+        }
+        .onAppear {
+            viewModel.loadClientes()
+        }
+        .refreshable {
+            viewModel.loadClientes()
         }
     }
 }
