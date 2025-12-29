@@ -8,18 +8,10 @@ import SwiftUI
 
 
 struct NavigationButtons: View {
-    let onBack: (() -> Void)?
     let onNext: (() -> Void)?
 
     var body: some View {
         HStack(spacing: 16) {
-            if let onBack = onBack {
-                Button("Atrás") {
-                    onBack()
-                }
-                .buttonStyleBackground(isPrimary: false)
-            }
-
             Button("Siguiente") {
                 onNext?()
             }

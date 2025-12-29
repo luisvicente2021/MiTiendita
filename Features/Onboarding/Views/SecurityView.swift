@@ -9,7 +9,7 @@ import SwiftUI
 struct SecurityView: View {
     @EnvironmentObject private var onboardingViewModel: OnboardingViewModel
     @EnvironmentObject var coordinator: AppCoordinator
-  
+    
     var body: some View {
         ScrollView {
             VStack {
@@ -49,8 +49,9 @@ struct SecurityView: View {
                 
                 VStack(spacing: 16) {
                     Text("Seguridad y Respaldo")
-                        .font(.system(size: 32, weight: .bold, design: .rounded))
+                        .font(.system(size: 24, weight: .bold, design: .rounded))
                         .multilineTextAlignment(.center)
+                        .lineLimit(nil)
                     
                     Text("Tu información protegida y respaldada en todo momento")
                         .font(.body)
@@ -78,16 +79,9 @@ struct SecurityView: View {
                     ActionButton(title: "Comenzar a Usar Mi Tiendita", action: {
                         withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
                             onboardingViewModel.completeOnboarding()
-                            coordinator.push(.dashboard)
+                            coordinator.push(.storeOwnerInfo)
                         }
                     })
-                    Button(action: {
-                        coordinator.push(.salesTracking)
-                    }) {
-                        Text("Atrás")
-                            .font(.headline)
-                            .foregroundColor(.secondary)
-                    }
                 }
                 .padding(.horizontal, 40)
                 .padding(.bottom, 30)

@@ -20,7 +20,7 @@ struct StoreOwnerInfoView: View {
     var body: some View {
         VStack(spacing: 0) {
             // Header
-            headerSection
+            //headerSection
             
             ScrollView {
                 VStack(spacing: 24) {
@@ -115,29 +115,7 @@ struct StoreOwnerInfoView: View {
             // Botones de navegación
             navigationButtons
         }
-        .navigationBarHidden(true)
-    }
-    
-    private var headerSection: some View {
-        HStack {
-            Button(action: {
-                withAnimation {
-                    //currentPage = 0
-                }
-            }) {
-                Image(systemName: "chevron.left")
-                    .font(.title3)
-                    .foregroundColor(.blue)
-            }
-            
-            Spacer()
-            
-            Text("1/4")
-                .font(.subheadline.bold())
-                .foregroundColor(.secondary)
-        }
-        .padding()
-        .background(Color(.systemBackground))
+        
     }
     
     private var navigationButtons: some View {
@@ -165,5 +143,5 @@ struct StoreOwnerInfoView: View {
 }
 
 #Preview {
-    // StoreOwnerInfoView()
+    StoreOwnerInfoView()
 }
