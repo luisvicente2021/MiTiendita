@@ -10,17 +10,11 @@ import SwiftUI
 struct SummaryView: View {
     @EnvironmentObject private var registerViewModel: RegisterPersonViewModel
     @EnvironmentObject private var loginViewModel: LoginViewModel
-
-    //@EnvironmentObject private var loginViewModel: LoginViewModel
-    //@Environment(\.dismiss) private var dismiss
     @EnvironmentObject private var coordinator: AppCoordinator
     var onFinish: ((Persona) -> Void)?
     
     var body: some View {
         VStack(spacing: 0) {
-            // Header
-            headerSection
-            
             ScrollView {
                 VStack(spacing: 24) {
                     Text("Paso 4 de 4")
@@ -88,7 +82,6 @@ struct SummaryView: View {
             // Botones finales
             finalButtons
         }
-        .navigationBarHidden(true)
         .alert("¡Configuración Completa!", isPresented: $registerViewModel.showSuccessAlert) {
             Button("Continuar") {
                 
@@ -109,27 +102,6 @@ struct SummaryView: View {
         .fullScreenCover(isPresented: $registerViewModel.onboardingCompleted) {
            // LoginView()  en processo
         }
-    }
-    
-    private var headerSection: some View {
-        HStack {
-            Button(action: {
-                // Regresar a preferencias
-              //  dismiss()
-            }) {
-                Image(systemName: "chevron.left")
-                    .font(.title3)
-                    .foregroundColor(.blue)
-            }
-            
-            Spacer()
-            
-            Text("4/4")
-                .font(.subheadline.bold())
-                .foregroundColor(.secondary)
-        }
-        .padding()
-        .background(Color(.systemBackground))
     }
     
     private var finalButtons: some View {

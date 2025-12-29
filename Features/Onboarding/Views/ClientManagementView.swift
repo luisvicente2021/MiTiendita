@@ -46,10 +46,9 @@ struct ClientManagementView: View {
             
             VStack(spacing: 16) {
                 Text("Registro Completo de Clientes")
-                    .font(.system(size: 20, weight: .bold, design: .rounded))
+                    .font(.system(size: 24, weight: .bold, design: .rounded))
                     .multilineTextAlignment(.center)
                     .lineLimit(nil)
-                
                 
                 Text("Guarda toda la información importante de tus clientes de forma segura")
                     .font(.body)
@@ -82,13 +81,9 @@ struct ClientManagementView: View {
                 )
             }
             .padding(.horizontal, 30)
-            
             Spacer()
             
-            NavigationButtons(onBack: {
-                coordinator.pop()
-                print("Atras")
-            }, onNext: {
+            NavigationButtons( onNext: {
                 coordinator.push(.loanManagement)
                 print("Adelante")
             })
@@ -96,5 +91,6 @@ struct ClientManagementView: View {
             .padding(.bottom, 30)
         }
         .padding()
+        
     }
 }

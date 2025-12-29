@@ -19,9 +19,6 @@ struct StoreAddressView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            // Header
-            headerSection
-            
             ScrollView {
                 VStack(spacing: 24) {
                     Text("Paso 2 de 4")
@@ -88,44 +85,10 @@ struct StoreAddressView: View {
             // Botones de navegación
             navigationButtons
         }
-        .navigationBarHidden(true)
-    }
-    
-    private var headerSection: some View {
-        HStack {
-            Button(action: {
-            }) {
-                Image(systemName: "chevron.left")
-                    .font(.title3)
-                    .foregroundColor(.blue)
-            }
-            
-            Spacer()
-            
-            Text("2/4")
-                .font(.subheadline.bold())
-                .foregroundColor(.secondary)
-        }
-        .padding()
-        .background(Color(.systemBackground))
     }
     
     private var navigationButtons: some View {
         HStack(spacing: 12) {
-            Button(action: {
-                withAnimation {
-                    coordinator.pop()
-                }
-            }) {
-                Text("Atrás")
-                    .font(.headline)
-                    .foregroundColor(.blue)
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(Color(.systemGray6))
-                    .cornerRadius(12)
-            }
-            
             Button(action: {
                 focusedField = nil
                 coordinator.push(.preferences)
