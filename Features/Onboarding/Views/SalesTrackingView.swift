@@ -10,7 +10,6 @@ struct SalesTrackingView: View {
     @EnvironmentObject var coordinator: AppCoordinator
     var body: some View {
         VStack {
-            
             ZStack {
                 RoundedRectangle(cornerRadius: 30)
                     .fill(
@@ -47,8 +46,9 @@ struct SalesTrackingView: View {
             
             VStack(spacing: 16) {
                 Text("Venta de Ropa Simplificada")
-                    .font(.system(size: 32, weight: .bold, design: .rounded))
+                    .font(.system(size: 24, weight: .bold, design: .rounded))
                     .multilineTextAlignment(.center)
+                    .lineLimit(nil)
                 
                 Text("Registra cada venta rápidamente y mantén tu inventario actualizado")
                     .font(.body)
@@ -85,10 +85,7 @@ struct SalesTrackingView: View {
             
             Spacer()
             
-            NavigationButtons(onBack: {
-                print("Atras")
-                coordinator.pop()
-            }, onNext: {
+            NavigationButtons(onNext: {
                 print("Adelante")
                 coordinator.push(.security)
             })

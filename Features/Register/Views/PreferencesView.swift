@@ -13,8 +13,6 @@ struct PreferencesView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            headerSection
-            
             ScrollView {
                 VStack(spacing: 24) {
                     Text("Paso 3 de 4")
@@ -101,44 +99,10 @@ struct PreferencesView: View {
             // Botones de navegación
             navigationButtons
         }
-        .navigationBarHidden(true)
-    }
-    
-    private var headerSection: some View {
-        HStack {
-            Button(action: {
-            }) {
-                Image(systemName: "chevron.left")
-                    .font(.title3)
-                    .foregroundColor(.blue)
-            }
-            
-            Spacer()
-            
-            Text("3/4")
-                .font(.subheadline.bold())
-                .foregroundColor(.secondary)
-        }
-        .padding()
-        .background(Color(.systemBackground))
     }
     
     private var navigationButtons: some View {
         HStack(spacing: 12) {
-            Button(action: {
-                withAnimation {
-                    coordinator.pop()
-                }
-            }) {
-                Text("Atrás")
-                    .font(.headline)
-                    .foregroundColor(.blue)
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(Color(.systemGray6))
-                    .cornerRadius(12)
-            }
-            
             Button(action: {
                 withAnimation {
                     coordinator.push(.summary)

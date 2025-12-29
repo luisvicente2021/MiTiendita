@@ -46,8 +46,9 @@ struct LoanManagementView: View {
             
             VStack(spacing: 16) {
                 Text("Administración de Fiados")
-                    .font(.system(size: 32, weight: .bold, design: .rounded))
+                    .font(.system(size: 24, weight: .bold, design: .rounded))
                     .multilineTextAlignment(.center)
+                    .lineLimit(nil)
                 
                 Text("Controla todos los créditos y pagos de tus clientes sin complicaciones")
                     .font(.body)
@@ -84,10 +85,7 @@ struct LoanManagementView: View {
             
             Spacer()
             
-            NavigationButtons(onBack: {
-                print("Boton de Atras")
-                coordinator.pop()
-            }, onNext: {
+            NavigationButtons(onNext: {
                 print("Boton de Adelante")
                 coordinator.push(.salesTracking)
                 
