@@ -1,0 +1,72 @@
+# =========================
+# Nivel 3 – Estricto (mejorar código)
+# =========================
+
+# -------------------------
+# Reglas desactivadas (solo lo necesario)
+# -------------------------
+disabled_rules:
+  - todo                      # comentarios TODO permitidos temporalmente
+
+# -------------------------
+# Estilo de código
+# -------------------------
+line_length:
+  warning: 120
+  ignores_comments: false
+
+indentation:
+  indentation_width: 4
+
+vertical_whitespace:
+  max_empty_lines: 1
+  ignores_comments: false
+
+file_length:
+  warning: 1000     # evita archivos gigantes
+
+# -------------------------
+# Complejidad de código
+# -------------------------
+function_body_length:
+  warning: 80       # funciones no muy largas
+
+type_body_length:
+  warning: 300      # structs/classes no gigantes
+
+cyclomatic_complexity:
+  warning: 10       # lógica demasiado compleja
+  ignores_case_statements: true
+
+function_parameter_count:
+  warning: 5        # muchas variables en funciones es mala señal
+
+# -------------------------
+# Nombres y legibilidad
+# -------------------------
+identifier_name:
+  min_length: 3
+  max_length: 40
+  excluded:
+    - id
+    - x
+    - y
+
+type_name:
+  min_length: 3
+  max_length: 40
+
+# -------------------------
+# Reglas de seguridad
+# -------------------------
+force_cast: warning
+force_try: warning
+force_unwrapping: warning
+
+# -------------------------
+# SwiftUI y patrones recomendados
+# -------------------------
+empty_count: warning
+redundant_nil_coalescing: warning
+vertical_parameter_alignment: warning
+
