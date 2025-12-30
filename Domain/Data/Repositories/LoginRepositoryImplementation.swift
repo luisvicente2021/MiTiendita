@@ -18,7 +18,7 @@ final class LoginRepositoryImplementation: LoginRepository {
     
     func login(email: String, password: String) async {
         do {
-            let success = try  dataSource.signIn(email: email, password: password)
+            _ = try  dataSource.signIn(email: email, password: password)
             
         } catch {
             print("❌ Error en login local:", error)

@@ -23,7 +23,7 @@ struct ClienteHeaderView: View {
                     )
                     .frame(width: 100, height: 100)
                 
-                if let fotoINE = cliente.fotoPersonaURL {
+                if cliente.fotoPersonaURL != nil {
                     // Si hay foto del INE
                     Image(systemName: "person.crop.circle.fill")
                         .font(.system(size: 60))
@@ -61,7 +61,7 @@ struct ClienteHeaderView: View {
                 }
                 .padding(.horizontal)
                 
-                if let email = cliente.fotoPersonaURL {
+                if cliente.fotoPersonaURL != nil {
                     HStack(spacing: 6) {
                         Image(systemName: "envelope.fill")
                             .font(.caption)

@@ -46,7 +46,7 @@ final class AppState: ObservableObject {
         isLoading = true
         
         do {
-            let session = try await localAuthService.getCurrentUser()
+            let session = try  localAuthService.getCurrentUser()
             currentUser = session?.toEntity()
             isAuthenticated = true
             print("✅ Usuario autenticado: \(session?.email ?? "")")
@@ -73,14 +73,11 @@ final class AppState: ObservableObject {
     
     func logout() {
         Task {
-            do {
-                try await localAuthService.signOut()
+                localAuthService.signOut()
                 currentUser = nil
                 isAuthenticated = false
                 print("✅ Sesión cerrada")
-            } catch {
-                print("❌ Error al cerrar sesión: \(error)")
-            }
+            
         }
     }
     

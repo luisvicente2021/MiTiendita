@@ -11,7 +11,6 @@ struct StoreOwnerInfoView: View {
     @EnvironmentObject private var viewModel: RegisterPersonViewModel
     @EnvironmentObject private var coordinator: AppCoordinator
     @FocusState private var focusedField: Field?
-    @State private var showCamera = false
     
     enum Field {
         case ownerName, storeName, phone, email, pin
@@ -105,12 +104,12 @@ struct StoreOwnerInfoView: View {
                     Spacer(minLength: 100)
                 }
             }
-            Button("Abrir cámara") {
-                showCamera = true
+            Button {
+                coordinator.push(.camera)
+            } label: {
+                Label("Abrir cámara", systemImage: "camera")
             }
-            .sheet(isPresented: $showCamera) {
-                CamaraView()
-            }
+            Spacer()
             
             // Botones de navegación
             navigationButtons

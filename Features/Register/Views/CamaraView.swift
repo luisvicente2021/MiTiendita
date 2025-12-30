@@ -46,7 +46,7 @@ struct CamaraView: View {
         .sheet(isPresented: $showingCamera) {
             ImagePicker(sourceType: .camera, selectedImage: $image)
         }
-        .onChange(of: image) { image in
+        .onChange(of: image) { 
             if let img = image,
                let data = img.jpegData(compressionQuality: 0.8) {
                 viewModel.photoData = data

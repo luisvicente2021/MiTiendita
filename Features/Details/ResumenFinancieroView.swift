@@ -14,7 +14,7 @@ struct ResumenFinancieroView: View {
             // Total de deuda
             ResumenCard(
                 titulo: "Deuda Total",
-                valor: "$\(cliente.montoPrestamoActual)",
+                valor: "$\(String(describing: cliente.montoPrestamoActual))",
                 icono: "dollarsign.circle.fill",
                 color: cliente.montoPrestamoActual ?? 0 > 0 ? .red : .green
             )
@@ -30,7 +30,7 @@ struct ResumenFinancieroView: View {
             // Historial
             ResumenCard(
                 titulo: "Historial",
-                valor: "\(cliente.haPagado)",
+                valor: "\(String(describing: cliente.haPagado))",
                 icono: "clock.fill",
                 color: .orange
             )

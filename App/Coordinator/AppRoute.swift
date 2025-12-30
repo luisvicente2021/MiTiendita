@@ -19,6 +19,7 @@ enum AppRoute: Hashable {
     
     // Register
     case storeOwnerInfo
+    case camera
     case storeAddress
     case preferences
     case summary
