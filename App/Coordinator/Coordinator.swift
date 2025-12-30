@@ -138,7 +138,6 @@ final class AppCoordinator: ObservableObject {
         case .security:
             SecurityView()
             
-        
         case .login:
             
             Text("Login")
@@ -152,9 +151,8 @@ final class AppCoordinator: ObservableObject {
             SummaryView()
         case .dashboard:
             DashboardView()
-            
-       
-            
+        case .camera:
+            CamaraView()
         }
     }
 }
