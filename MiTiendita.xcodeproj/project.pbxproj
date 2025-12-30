@@ -376,6 +376,7 @@
 				B1A963DF2E4C1EE800741ABD /* Sources */,
 				B1A963E02E4C1EE800741ABD /* Frameworks */,
 				B1A963E12E4C1EE800741ABD /* Resources */,
+				B1A0B20E2F0237590091DFF8 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -460,6 +461,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B1A0B20E2F0237590091DFF8 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  # Forzar ruta absoluta al proyecto\n  SWIFTLINT_PATH=\"${SRCROOT}/.swiftlint.yml\"\n  if [ -f \"$SWIFTLINT_PATH\" ]; then\n    swiftlint lint --config \"$SWIFTLINT_PATH\"\n  else\n    echo \"⚠️ No se encontró .swiftlint.yml en $SRCROOT\"\n  fi\nelse\n  echo \"⚠️ SwiftLint no instalado\"\nfi\n\n\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B1A963DF2E4C1EE800741ABD /* Sources */ = {
