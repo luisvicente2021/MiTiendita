@@ -57,6 +57,7 @@ struct RootView: View {
         if !appState.hasCompletedOnboarding {
             // Mostrar Onboarding
             onboardingFlow
+           // mainAppFlow
         } else if !appState.isAuthenticated {
             // Mostrar Login
             // authFlow
